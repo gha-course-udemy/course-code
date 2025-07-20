@@ -9,5 +9,5 @@ jobs:
         run: echo "Hello, World!"
       - name: Miltiline commands
         run: |
-          echo "This is a multiline command"
-          echo "It runs multiple lines in a single step"
+          node -v
+          npm -v
