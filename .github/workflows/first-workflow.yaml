@@ -7,11 +7,11 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello, World!"
-      - name: Miltiline commands
+      - name: Multiline commands
         run: |
           node -v
           npm -v
-  paraller-job-macos:
+  parallel-job-macos:
     runs-on: macos-latest
     steps:
       - name: View SW Version
@@ -21,6 +21,6 @@ jobs:
     needs: run-shell-commands
     steps:
       - name: echo a string
-        run: Write-Ouput "Windows String"
+        run: Write-Output "Windows String"
       - name: Error Step
         run: doesnotexits
